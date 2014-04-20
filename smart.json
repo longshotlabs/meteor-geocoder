@@ -1,0 +1,9 @@
+{
+  "name": "geocoder",
+  "description": "Easy geocoding by way of the node-geocoder package",
+  "homepage": "https://github.com/aldeed/meteor-geocoder",
+  "author": "Eric Dobbertin (http://dairystatedesigns.com)",
+  "version": "0.1.0",
+  "git": "https://github.com/aldeed/meteor-geocoder.git",
+  "packages": {}
+}

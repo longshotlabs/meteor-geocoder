@@ -22,7 +22,7 @@ var geo = new GeoCoder();
 var result = geo.geocode('29 champs elysée paris');
 ```
 
-Note that unlike in the node package, the `geocode` method is synchronous. This makes it simple to use in a server method.
+Note that unlike in the node package, the `geocode` method is synchronous. This makes it simple to use in a server method. If you prefer to pass a callback as the last argument, you can.
 
 The `google` service is used by default, but you can set the `geocoderProvider` option when constructing if you want to use [a different provider supported by node-geocoder](https://github.com/nchaulet/node-geocoder#geocoder-provider).
 

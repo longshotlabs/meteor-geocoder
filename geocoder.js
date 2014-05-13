@@ -13,6 +13,11 @@ var gc = function (address, options, callback) {
 	g.geocode(address, callback);
 };
 
-GeoCoder.prototype.geocode = function geoCoderGeocode(address) {
-	return Meteor._wrapAsync(gc)(address, this.options);
+GeoCoder.prototype.geocode = function geoCoderGeocode(address, callback) {
+	if (callback) {
+		callback = Meteor.bindEnvironment(callback, function (error) { if (error) throw error; });
+		gc(address, this.options, callback);
+	} else {
+		return Meteor._wrapAsync(gc)(address, this.options);
+	}
 };

@@ -29,3 +29,17 @@ The `google` service is used by default, but you can set the `geocoderProvider` 
 You can also set the `httpAdapter` option to `"https"` to use HTTPS.
 
 If you need to specify any of the extra options mentioned in the `node-geocoder` docs, you can pass those also as options to the constructor.
+
+## Examples
+
+*server.js:*
+
+```js
+// Reverse
+var geo = new GeoCoder({
+  geocoderProvider: "mapquest",
+  httpAdapter: "https",
+  apiKey: 'YOUR_API_KEY'
+});
+var result = geo.reverse(45.767, 4.833);
+```

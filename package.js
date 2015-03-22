@@ -10,6 +10,7 @@ Npm.depends({
 });
 
 Package.onUse(function(api) {
+  api.use('underscore');
   api.export('GeoCoder', 'server');
   api.addFiles('geocoder.js', 'server');
 });

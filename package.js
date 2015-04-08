@@ -6,7 +6,7 @@ Package.describe({
 });
 
 Npm.depends({
-  'node-geocoder': '2.19.1'
+  'node-geocoder': '2.19.2'
 });
 
 Package.onUse(function(api) {

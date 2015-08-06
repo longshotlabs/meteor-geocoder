@@ -1,12 +1,12 @@
 Package.describe({
   name: "aldeed:geocoder",
   summary: "Easy geocoding by way of the node-geocoder package",
-  version: "0.3.6",
+  version: "0.3.7",
   git: "https://github.com/aldeed/meteor-geocoder.git"
 });
 
 Npm.depends({
-  'node-geocoder': '2.19.2'
+  'node-geocoder': '2.22.0'
 });
 
 Package.onUse(function(api) {

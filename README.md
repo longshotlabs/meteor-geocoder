@@ -3,18 +3,10 @@ geocoder
 
 A Meteor package that provides the geocoding features of the [node-geocoder](https://github.com/nchaulet/node-geocoder) package with a simple API.
 
-## Installation (As of Meteor 0.9.0)
+## Installation
 
 ```bash
 $ meteor add aldeed:geocoder
-```
-
-## Installation (Prior to Meteor 0.9.0)
-
-Install using Meteorite:
-
-```bash
-$ mrt add geocoder
 ```
 
 ## Usage

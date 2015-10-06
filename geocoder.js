@@ -31,7 +31,7 @@ GeoCoder.prototype.geocode = function geoCoderGeocode(address, callback) {
 
 var rv = function (lat, lng, options, callback) {
   var g = geocoder(options.geocoderProvider, options.httpAdapter, options);
-  g.reverse(lat, lng, callback);
+  g.reverse({lat: lat, lon: lng}, callback);
 };
 
 GeoCoder.prototype.reverse = function geoCoderReverse(lat, lng, callback) {

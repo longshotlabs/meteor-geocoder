@@ -22,9 +22,9 @@ var result = geo.geocode('29 champs elysée paris');
 
 Note that unlike in the node package, the `geocode` method is synchronous. This makes it simple to use in a server method. If you prefer to pass a callback as the last argument, you can.
 
-The `google` service is used by default, but you can set the `geocoderProvider` option when constructing if you want to use [a different provider supported by node-geocoder](https://github.com/nchaulet/node-geocoder#geocoder-provider).
+The `Google` service is used by default, but you can set the `GeocoderProvider` option when constructing if you want to use [a different provider supported by node-geocoder](https://github.com/nchaulet/node-geocoder#geocoder-provider).
 
-You can also set the `httpAdapter` option to `"https"` to use HTTPS.
+You can also set the `HttpAdapter` option to `"Https"` to use HTTPS.
 
 If you need to specify any of the extra options mentioned in the `node-geocoder` docs, you can pass those also as options to the constructor.
 
